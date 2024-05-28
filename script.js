@@ -65,7 +65,7 @@ class CustomSelector {
     init() {
         this.selectContainer.addEventListener('click', this.hideOrShowListOptions.bind(this));
         this.listOptionsWrapper.addEventListener('click', this.setOptionActive.bind(this));
-        window.addEventListener('click', this.hideSelectOnClickWindow.bind(this));
+        window.addEventListener('click', this.hideSelectByClickOnWindow.bind(this));
         this.render();
 
     }
