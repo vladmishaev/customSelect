@@ -49,7 +49,7 @@ class CustomSelector {
         })
     }
 
-    hideSelectOnClickWindow() {
+    hideSelectByClickOnWindow() {
         if (this.selectContainer.dataset.status === 'active') {
             this.selectContainer.dataset.status = 'disabled';
         }
