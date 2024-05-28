@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>CustomSelect</title>
+	</head>
+	<body>
+		<div
+			style="
+				display: flex;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+				font-family: 'Roboto', sans-serif;
+			"
+		>
+			<div tabindex="0" data-selector="container" data-status="disabled">
+				<p data-selector="text"></p>
+				<i class="bi bi-chevron-down" data-select="icon"></i>
+				<div data-selector="list-option">
+					<div data-selector="option" data-value="1">Значение 1</div>
+					<div
+						data-selector="option"
+						data-value="2"
+						data-status="active"
+					>
+						Значение 2
+					</div>
+					<div data-selector="option" data-value="3">Значение 3</div>
+					<div data-selector="option" data-value="4">Значение 4</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
